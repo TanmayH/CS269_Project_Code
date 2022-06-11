@@ -1,0 +1,33 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+range{ 
+label
+}
+}
+row{ 
+range{ 
+label
+}
+text{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

@@ -1,0 +1,26 @@
+layout_type{ 
+layout_4
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+row{ 
+text{ 
+label
+}
+}
+row{ 
+date{ 
+label
+}
+text{ 
+label
+}
+}
+}

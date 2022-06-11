@@ -1,0 +1,27 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-text, navbar-text, navbar-text
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+mixed{ 
+mix-para{ 
+label
+}
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+}

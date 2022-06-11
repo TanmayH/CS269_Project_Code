@@ -1,0 +1,43 @@
+layout_type{ 
+layout_2
+}
+header{ 
+header-title
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item, list-item
+}
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+}
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+mix-para{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

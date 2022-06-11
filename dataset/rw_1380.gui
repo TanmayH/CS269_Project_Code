@@ -1,0 +1,16 @@
+layout_type{ 
+layout_3
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

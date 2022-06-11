@@ -1,0 +1,17 @@
+layout_type{ 
+layout_3
+}
+header{ 
+header-title
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title, carousel-title
+}
+featured-item{ 
+feature-element, feature-element
+}
+}
+footer{ 
+footer-title
+}

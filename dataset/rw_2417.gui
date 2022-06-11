@@ -1,0 +1,19 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title
+}
+mixed{ 
+mix-para{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

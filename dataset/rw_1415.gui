@@ -1,0 +1,19 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element
+}
+mixed{ 
+mix-para{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

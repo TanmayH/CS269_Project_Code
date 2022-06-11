@@ -1,0 +1,24 @@
+layout_type{ 
+layout_4
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+mix-para{ 
+label
+}
+}
+featured-item{ 
+feature-element, feature-element
+}
+}

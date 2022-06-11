@@ -1,0 +1,24 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+date{ 
+label
+}
+}
+row{ 
+date{ 
+label
+}
+}
+}

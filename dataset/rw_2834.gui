@@ -1,0 +1,18 @@
+layout_type{ 
+layout_1
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+}
+mixed{ 
+mix-unordered-list{ 
+list-item, list-item, list-item, list-item
+}
+}
+}

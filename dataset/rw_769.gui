@@ -1,0 +1,19 @@
+layout_type{ 
+layout_3
+}
+header{ 
+header-title
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

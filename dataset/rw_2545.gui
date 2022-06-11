@@ -1,0 +1,19 @@
+layout_type{ 
+layout_1
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text, navbar-text
+}
+content-section{ 
+mixed{ 
+mix-unordered-list{ 
+list-item, list-item, list-item, list-item
+}
+}
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+}
+footer{ 
+footer-title
+}

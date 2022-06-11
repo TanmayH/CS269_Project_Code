@@ -1,0 +1,14 @@
+layout_type{ 
+layout_2
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text, sidebar-text
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title
+}
+}
+footer{ 
+footer-title
+}

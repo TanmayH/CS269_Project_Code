@@ -1,0 +1,14 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+}

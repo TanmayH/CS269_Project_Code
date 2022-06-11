@@ -1,0 +1,16 @@
+layout_type{ 
+layout_1
+}
+navbar{ 
+navbar-text, navbar-text
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

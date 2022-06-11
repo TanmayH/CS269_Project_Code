@@ -1,0 +1,29 @@
+layout_type{ 
+layout_3
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item, list-item
+}
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item, list-item
+}
+}
+}

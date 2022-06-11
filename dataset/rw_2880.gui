@@ -1,0 +1,25 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+text{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

@@ -1,0 +1,40 @@
+layout_type{ 
+layout_4
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+mix-para{ 
+label
+}
+}
+}

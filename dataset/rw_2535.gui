@@ -1,0 +1,27 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+}
+}
+footer{ 
+footer-title
+}

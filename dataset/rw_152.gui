@@ -1,0 +1,11 @@
+layout_type{ 
+layout_4
+}
+header{ 
+header-title
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title
+}
+}

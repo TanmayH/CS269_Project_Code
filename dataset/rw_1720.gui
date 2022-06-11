@@ -1,0 +1,19 @@
+layout_type{ 
+layout_3
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+}
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+}
+footer{ 
+footer-title
+}

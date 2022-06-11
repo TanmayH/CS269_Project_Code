@@ -1,0 +1,16 @@
+layout_type{ 
+layout_3
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title, carousel-title
+}
+mixed{ 
+mix-para{ 
+label
+}
+mix-ordered-list{ 
+list-item, list-item, list-item
+}
+}
+}

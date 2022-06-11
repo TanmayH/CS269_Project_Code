@@ -1,0 +1,10 @@
+layout_type{ 
+layout_2
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+}
+}

@@ -1,0 +1,11 @@
+layout_type{ 
+layout_2
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element
+}
+}

@@ -1,0 +1,18 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-unordered-list{ 
+list-item, list-item, list-item, list-item
+}
+}
+mixed{ 
+mix-para{ 
+label
+}
+}
+}

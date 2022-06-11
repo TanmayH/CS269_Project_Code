@@ -1,0 +1,16 @@
+layout_type{ 
+layout_4
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title
+}
+mixed{ 
+mix-para{ 
+label
+}
+}
+}

@@ -1,0 +1,32 @@
+layout_type{ 
+layout_2
+}
+navbar{ 
+navbar-text, navbar-text, navbar-text
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+range{ 
+label
+}
+text{ 
+label
+}
+}
+row{ 
+text{ 
+label
+}
+}
+row{ 
+text{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

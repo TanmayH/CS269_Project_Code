@@ -1,0 +1,14 @@
+layout_type{ 
+layout_1
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title
+}
+}

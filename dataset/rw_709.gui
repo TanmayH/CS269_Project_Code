@@ -1,0 +1,21 @@
+layout_type{ 
+layout_3
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+}
+}

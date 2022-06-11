@@ -1,0 +1,16 @@
+layout_type{ 
+layout_3
+}
+content-section{ 
+mixed{ 
+mix-unordered-list{ 
+list-item, list-item, list-item, list-item
+}
+}
+featured-item{ 
+feature-element, feature-element, feature-element
+}
+}
+footer{ 
+footer-title
+}

@@ -1,0 +1,19 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+}
+featured-item{ 
+feature-element, feature-element
+}
+}

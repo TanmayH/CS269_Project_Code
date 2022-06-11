@@ -1,0 +1,16 @@
+layout_type{ 
+layout_2
+}
+navbar{ 
+navbar-text, navbar-text, navbar-text
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+date{ 
+label
+}
+}
+}

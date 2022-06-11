@@ -1,0 +1,30 @@
+layout_type{ 
+layout_2
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text, sidebar-text
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title
+}
+mixed{ 
+mix-para{ 
+label
+}
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+}

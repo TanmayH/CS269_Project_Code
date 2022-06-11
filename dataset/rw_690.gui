@@ -1,0 +1,21 @@
+layout_type{ 
+layout_1
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+}

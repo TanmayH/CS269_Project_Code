@@ -1,0 +1,26 @@
+layout_type{ 
+layout_4
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item
+}
+}
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+}

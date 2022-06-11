@@ -1,0 +1,15 @@
+layout_type{ 
+layout_3
+}
+content-form{ 
+row{ 
+range{ 
+label
+}
+}
+row{ 
+date{ 
+label
+}
+}
+}

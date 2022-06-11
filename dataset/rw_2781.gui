@@ -1,0 +1,26 @@
+layout_type{ 
+layout_3
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+range{ 
+label
+}
+}
+row{ 
+date{ 
+label
+}
+}
+row{ 
+date{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

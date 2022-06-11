@@ -1,0 +1,20 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+header{ 
+header-title
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element
+}
+featured-item{ 
+feature-element, feature-element
+}
+}
+footer{ 
+footer-title
+}

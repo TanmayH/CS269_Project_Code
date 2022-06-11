@@ -1,0 +1,16 @@
+layout_type{ 
+layout_2
+}
+header{ 
+header-title
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+}
+}

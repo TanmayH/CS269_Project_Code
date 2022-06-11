@@ -1,0 +1,24 @@
+layout_type{ 
+layout_2
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-unordered-list{ 
+list-item, list-item, list-item, list-item
+}
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+}
+}

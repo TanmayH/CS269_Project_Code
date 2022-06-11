@@ -1,0 +1,19 @@
+layout_type{ 
+layout_4
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+navbar{ 
+navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+}

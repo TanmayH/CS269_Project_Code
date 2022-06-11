@@ -1,0 +1,16 @@
+layout_type{ 
+layout_4
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+range{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

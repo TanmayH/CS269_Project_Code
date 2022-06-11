@@ -1,0 +1,35 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+navbar{ 
+navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+range{ 
+label
+}
+}
+row{ 
+text{ 
+label
+}
+date{ 
+label
+}
+}
+row{ 
+date{ 
+label
+}
+}
+}

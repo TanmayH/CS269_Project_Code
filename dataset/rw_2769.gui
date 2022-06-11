@@ -1,0 +1,29 @@
+layout_type{ 
+layout_4
+}
+navbar{ 
+navbar-text, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-para{ 
+label
+}
+}
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+}

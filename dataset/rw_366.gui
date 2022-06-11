@@ -1,0 +1,27 @@
+layout_type{ 
+layout_4
+}
+sidebar{ 
+sidebar-text, sidebar-text, sidebar-text
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+}
+row{ 
+range{ 
+label
+}
+range{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

@@ -1,0 +1,21 @@
+layout_type{ 
+layout_2
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col
+}
+table-row{ 
+table-col, table-col
+}
+}
+}
+featured-item{ 
+feature-element, feature-element
+}
+}

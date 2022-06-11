@@ -1,0 +1,13 @@
+layout_type{ 
+layout_3
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+text{ 
+label
+}
+}
+}

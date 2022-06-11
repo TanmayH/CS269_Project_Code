@@ -1,0 +1,14 @@
+layout_type{ 
+layout_1
+}
+header{ 
+header-title
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title
+}
+}
+footer{ 
+footer-title
+}

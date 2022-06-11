@@ -1,0 +1,22 @@
+layout_type{ 
+layout_2
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text
+}
+content-section{ 
+featured-item{ 
+feature-element, feature-element
+}
+mixed{ 
+mix-unordered-list{ 
+list-item, list-item, list-item
+}
+}
+}
+footer{ 
+footer-title
+}

@@ -1,0 +1,24 @@
+layout_type{ 
+layout_2
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+row{ 
+range{ 
+label
+}
+range{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

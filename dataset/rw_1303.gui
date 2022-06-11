@@ -1,0 +1,27 @@
+layout_type{ 
+layout_4
+}
+content-section{ 
+mixed{ 
+mix-table{ 
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+table-row{ 
+table-col, table-col, table-col
+}
+}
+mix-ordered-list{ 
+list-item, list-item, list-item
+}
+}
+carousel{ 
+carousel-title, carousel-title, carousel-title, carousel-title
+}
+}
+footer{ 
+footer-title
+}

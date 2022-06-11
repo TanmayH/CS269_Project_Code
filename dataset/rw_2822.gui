@@ -1,0 +1,16 @@
+layout_type{ 
+layout_2
+}
+sidebar{ 
+sidebar-title, sidebar-text, sidebar-text, sidebar-text
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title
+}
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item, list-item
+}
+}
+}

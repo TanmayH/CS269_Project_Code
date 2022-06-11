@@ -1,0 +1,13 @@
+layout_type{ 
+layout_4
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+}

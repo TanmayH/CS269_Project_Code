@@ -1,0 +1,10 @@
+layout_type{ 
+layout_1
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+}

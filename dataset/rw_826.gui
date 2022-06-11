@@ -1,0 +1,18 @@
+layout_type{ 
+layout_3
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+}
+row{ 
+range{ 
+label
+}
+}
+}

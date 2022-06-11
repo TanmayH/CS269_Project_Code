@@ -1,0 +1,19 @@
+layout_type{ 
+layout_2
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+content-section{ 
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item, list-item
+}
+mix-para{ 
+label
+}
+}
+featured-item{ 
+feature-element, feature-element
+}
+}

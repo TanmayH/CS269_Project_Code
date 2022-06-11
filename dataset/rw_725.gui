@@ -1,0 +1,11 @@
+layout_type{ 
+layout_3
+}
+content-section{ 
+carousel{ 
+carousel-title, carousel-title
+}
+}
+footer{ 
+footer-title
+}

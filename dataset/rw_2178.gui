@@ -1,0 +1,27 @@
+layout_type{ 
+layout_4
+}
+navbar{ 
+navbar-text, navbar-text, navbar-text
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+text{ 
+label
+}
+}
+row{ 
+text{ 
+label
+}
+date{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

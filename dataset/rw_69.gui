@@ -1,0 +1,19 @@
+layout_type{ 
+layout_4
+}
+navbar{ 
+navbar-title, navbar-text, navbar-text
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+date{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

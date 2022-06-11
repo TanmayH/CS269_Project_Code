@@ -1,0 +1,19 @@
+layout_type{ 
+layout_1
+}
+sidebar{ 
+sidebar-text, sidebar-text
+}
+header{ 
+header-title
+}
+content-section{ 
+mixed{ 
+mix-ordered-list{ 
+list-item, list-item, list-item
+}
+}
+}
+footer{ 
+footer-title
+}

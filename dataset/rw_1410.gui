@@ -1,0 +1,16 @@
+layout_type{ 
+layout_1
+}
+content-form{ 
+row{ 
+date{ 
+label
+}
+text{ 
+label
+}
+}
+}
+footer{ 
+footer-title
+}

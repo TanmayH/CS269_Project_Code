@@ -1,0 +1,13 @@
+layout_type{ 
+layout_3
+}
+header{ 
+header-title
+}
+content-form{ 
+row{ 
+range{ 
+label
+}
+}
+}
