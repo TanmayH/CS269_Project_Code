@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta content="{&quot;primary&quot;: &quot;rgb(100, 180, 99)&quot;, &quot;secondary&quot;: &quot;rgb(18, 110, 69)&quot;, &quot;light&quot;: &quot;rgb(215, 249, 208)&quot;, &quot;dark&quot;: &quot;rgb(18, 36, 20)&quot;, &quot;enable-gradients&quot;: true}" name="wg-palette"> 
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="../static/css/bootstrap_downloaded.css" rel="stylesheet"> 
+      <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body style="overflow: scroll;">   
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <div>
+                            <h3 id="caption" style="margin-left:0.8em !important; margin-bottom:1em !important;margin-top:1em !important">Try a sample sketch!</h3>
+                        </div>
+                        <div style="margin-top: 1em">
+                            <div class="col-md-3"><img src="../static/images/sample1.png" style="height: 150px; width: 150px;box-sizing:border-box" id="sample1"/></div>
+                            <div class="col-md-3"><img src="../static/images/sample2.png" style="height: 150px; width: 150px;box-sizing:border-box" id="sample2"/></div>
+                            <div class="col-md-3"><img src="../static/images/sample3.png" style="height: 150px; width: 150px;box-sizing:border-box" id="sample3"/></div>
+                            <div class="col-md-3"><img src="../static/images/sample4.png" style="height: 150px; width: 150px;box-sizing:border-box" id="sample4"/></div>
+                        </div>
+                        <div style="margin-top:15em">
+                            <button id="upload_sample" type="button" class="btn btn-primary center" style="margin-top:2em !important">Try Sample!</button>
+                        </div>
+                        <div>
+                          <img id="sketch_input" class="center" src="#" alt="Upload A Sketch" style="display:none; width:500px; height:300px;margin-bottom: 1em; margin-top: 1em;"/>
+                        </div>
+                        <h3 id="caption" style="margin-left:0.8em !important; margin-bottom:1em !important;">Upload a sketch below!</h3>
+                        <div class="row">
+                          <div class="loader" id="loader" style="display:none"></div>
+                        </div>
+                        <div style="margin-bottom: 0.8em;"></div>
+                        <form role="form" enctype="multipart/form-data" method="post" id="myForm"> 
+                            <div class="col-md-12">
+                               <input style="margin-bottom:2em !important;" class="form-control" type="file" name="sketchUpload" id = "sketchUpload" placeholder="Upload File" required>
+                            </div>
+                            <div>
+                              <div class="form-button col-md-3">
+                                  <button type="submit" class="btn btn-primary">Upload Sketch</button>
+                              </div>
+
+                              <div class="form-button col-md-3">
+                                  <button id="sketch" type="button" class="btn btn-primary" disabled>Show Sketch</button>
+                              </div>
+                              
+                              <div class="form-button col-md-3">
+                                  <button id="view" type="button" class="btn btn-primary" disabled>Show Output</button>
+                              </div>
+
+                              <div class="form-button col-md-3">
+                                  <button id="download" type="button" class="btn btn-primary" disabled>Download Output</button>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+              <span id="preview_span" style="display:none;">
+                <label for="preivew_checkbox" style="color:white">View Preview</label>
+                <input type="checkbox" id="preivew_checkbox"/>
+              </span>
+              <div id="website_embed" style="display:none;">
+                <iframe src = "/init" id="website_embed_inner" style="width:1500px; height:720px;"></iframe>
+              </div>
+              <div id="website_preview" style="display:none;">
+                <iframe src = "/init" id="website_embed_preview" style="width:1500px; height:720px;"></iframe>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      fpath = ""
+      sample_choice = ""
+      function handleForm(event) { 
+        var formData = new FormData();
+        var files = document.getElementById("sketchUpload").files
+        if (files.length > 0){
+          formData.append("file",files[0])
+          var request = new XMLHttpRequest();
+          fpath = files[0].name.substr(0,files[0].name.indexOf('.'))
+          request.onload = function (e) {
+          if (request.readyState === 4) {
+            if (request.status === 200) {
+              form = document.getElementById("myForm")
+              var elements = form.elements;
+              for (var i = 0, len = elements.length; i < len; ++i) {
+                  elements[i].disabled = false;
+              }
+              document.getElementById("loader").style.display = "none"
+              document.getElementById("caption").textContent = "Sketch Processed!"
+              document.getElementById("website_embed_inner").src = "/generated/"+fpath
+              document.getElementById("website_embed").style.display = "block"
+              document.getElementById("preview_span").style.display = "block"
+              document.getElementById("view").innerText  = "Hide Output"
+              document.getElementById("download").disabled = false
+              document.getElementById("upload_sample").disabled = false
+
+            } else {
+              console.error(request.statusText);
+            }
+          }
+          };
+          request.open("POST", "/upload-image");
+          request.send(formData);
+          form = document.getElementById("myForm")
+          var elements = form.elements;
+          for (var i = 0, len = elements.length; i < len; ++i) {
+              elements[i].disabled = true;
+          }
+          document.getElementById("loader").style.display = "block"
+          document.getElementById("website_embed").style.display = "none"
+          document.getElementById("website_preview").style.display = "none"
+          document.getElementById("preview_span").style.display = "none"
+          document.getElementById("website_embed_inner").src = "/init/"
+          document.getElementById("website_embed_preview").src = "/init/"
+          document.getElementById("view").innerText  = "Show Output"
+          document.getElementById("caption").textContent = "Processing Sketch Image....."
+          document.getElementById("download").disabled = true
+          document.getElementById("preivew_checkbox").checked = false
+          document.getElementById("upload_sample").disabled = true
+          samples = ["sample1","sample2","sample3","sample4"]
+          for (var i=0; i<4;i++){
+            id = samples[i]
+            document.getElementById(samples[i]).style.border = "0px"
+          }
+        }
+        else {
+          return False;
+        }
+        event.preventDefault(); 
+      }
+
+      function viewGenerated(event){
+        embedder = document.getElementById("website_embed")
+        button = document.getElementById("view");
+        if (embedder.style.display == "none"){
+          embedder.style.display = "block"
+          button.innerText  = "Hide Output"
+        } else if (embedder.style.display == "block"){
+          embedder.style.display = "none"
+          button.innerText  = "Show Output"
+        }
+        event.preventDefault(); 
+      }
+
+      function displaySketch(event){
+        var files = document.getElementById("sketchUpload").files
+        img = document.getElementById("sketch_input")
+        button = document.getElementById("sketch")
+        if (files.length > 0){
+            file = files[0]
+            img.style.display = "block"
+            img.src = URL.createObjectURL(file)
+            button.innerText = "Hide Sketch"
+            button.disabled = false
+        } else {
+            img.style.display = "none"
+            button.innerText = "Show Sketch"
+            button.disabled = true
+        }
+        event.preventDefault();
+      }
+
+      function toggleSketch(event){
+        img = document.getElementById("sketch_input")
+        button = document.getElementById("sketch")
+        if (img.style.display == "none"){
+          img.style.display = "block"
+          button.innerText = "Hide Sketch"
+        } else {
+          img.style.display = "none"
+          button.innerText = "Show Sketch"
+        }
+      } 
+
+      function viewChanges(event){
+        document.getElementById("caption").textContent = "Downloading Result....."
+        var inside = iframeRef( document.getElementById('website_embed_inner') )
+        button = inside.getElementById("all_changes")
+        button.click()
+        document.getElementById("caption").textContent = "Download Complete!"
+        event.preventDefault();
+      }
+
+      function iframeRef( frameRef ) {
+          return frameRef.contentWindow
+              ? frameRef.contentWindow.document
+              : frameRef.contentDocument
+      }
+
+      function togglePreview(event){
+        isChecked = event.target.checked
+        console.log(isChecked)
+        if (isChecked){
+          var inside = iframeRef( document.getElementById('website_embed_inner'))
+          button = inside.getElementById("change_values_button")
+          button.click()
+          change_string = inside.getElementById("change_values").innerHTML
+          var formData = new FormData();
+          var request = new XMLHttpRequest();
+          formData.append("changes",change_string)
+          console.log(change_string)
+          url = "/preview-html-prepare/"+fpath
+          console.log(url)
+          request.onload = function (e) {
+          if (request.readyState === 4) {
+            if (request.status === 200) {
+              document.getElementById("website_preview").style.display = "block"
+              document.getElementById("website_embed_preview").src = "/preview-html"
+              document.getElementById("website_embed").style.display = "none"
+            } else {
+              console.error(request.statusText);
+            }
+          }
+          };
+          console.log(url)
+          request.open("POST", url);
+          request.send(formData);
+        } else {
+          document.getElementById("website_embed").style.display = "block"
+          document.getElementById("website_embed_preview").src = "/init/"
+          document.getElementById("website_preview").style.display = "none"
+        }
+        event.preventDefault();
+      }
+
+      function onClickImage(event){
+        image = document.getElementById(event.target.id)
+        img = document.getElementById("sketch_input")
+        img.src= image.src
+        img.style.display = "block"
+        image.style.border = "5px solid white"
+        sample_choice = image.id
+        samples = ["sample1","sample2","sample3","sample4"]
+        for (var i=0; i<4;i++){
+          id = samples[i]
+          if (id==image.id){
+            continue
+          }
+          document.getElementById(samples[i]).style.border = "0px"
+        }
+        event.preventDefault()
+      }
+
+      function upload_sample_image(event){
+        if (sample_choice!=""){
+          var formData = new FormData();
+          formData.append("sample_id", sample_choice)
+          var request = new XMLHttpRequest();
+          request.onload = function (e) {
+          if (request.readyState === 4) {
+            if (request.status === 200) {
+              form = document.getElementById("myForm")
+              var elements = form.elements;
+              for (var i = 0, len = elements.length; i < len; ++i) {
+                  elements[i].disabled = false;
+              }
+              document.getElementById("loader").style.display = "none"
+              document.getElementById("caption").textContent = "Sketch Processed!"
+              document.getElementById("website_embed_inner").src = "/generated/"+sample_choice
+              document.getElementById("website_embed").style.display = "block"
+              document.getElementById("preview_span").style.display = "block"
+              document.getElementById("view").innerText  = "Hide Output"
+              document.getElementById("download").disabled = false
+              document.getElementById("upload_sample").disabled = false
+            } else {
+              console.error(request.statusText);
+            }
+          }
+          };
+          fpath=sample_choice
+          request.open("POST", "/sample-image/"+sample_choice);
+          request.send(formData);
+          form = document.getElementById("myForm")
+          var elements = form.elements;
+          for (var i = 0, len = elements.length; i < len; ++i) {
+              elements[i].disabled = true;
+          }
+          document.getElementById("loader").style.display = "block"
+          document.getElementById("website_embed").style.display = "none"
+          document.getElementById("website_preview").style.display = "none"
+          document.getElementById("preview_span").style.display = "none"
+          document.getElementById("website_embed_inner").src = "/init/"
+          document.getElementById("website_embed_preview").src = "/init/"
+          document.getElementById("view").innerText  = "Show Output"
+          document.getElementById("caption").textContent = "Processing Sketch Image....."
+          document.getElementById("download").disabled = true
+          document.getElementById("preivew_checkbox").checked = false
+          document.getElementById("upload_sample").disabled = true
+        }
+        event.preventDefault(); 
+      }
+
+      img1 = document.getElementById("sample1")
+      img2 = document.getElementById("sample2")
+      img3 = document.getElementById("sample3")
+      img4 = document.getElementById("sample4")
+      img1.addEventListener("click",onClickImage)
+      img2.addEventListener("click",onClickImage)
+      img3.addEventListener("click",onClickImage)
+      img4.addEventListener("click",onClickImage)
+
+      var sample_upload = document.getElementById("upload_sample")
+      sample_upload.addEventListener("click",upload_sample_image)
+
+      var form = document.getElementById("myForm");
+      form.addEventListener('submit', handleForm);
+
+      var button = document.getElementById("view");
+      button.addEventListener('click', viewGenerated);
+
+      var uploader = document.getElementById("sketchUpload")
+      uploader.addEventListener('change',displaySketch)
+
+      var sketchToggle = document.getElementById("sketch")
+      sketchToggle.addEventListener('click', toggleSketch);
+
+      var previewToggle = document.getElementById("preivew_checkbox")
+      previewToggle.addEventListener('change',togglePreview)
+
+      var downloadContent = document.getElementById("download")
+      downloadContent.addEventListener('click', viewChanges);
+      
+    </script>
+  </body>
+</html>

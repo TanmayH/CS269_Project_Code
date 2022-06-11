@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordcount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wordcount 3000</h1>
+      <form role="form" enctype="multipart/form-data" method="post" id="myForm">
+        <div class="form-group">
+          <!-- <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL..." style="max-width: 300px;" autofocus required> -->
+          <input type = "file" name = "file" id="file"/>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br>
+      {% for error in errors %}
+        <h4>{{ error }}</h4>
+      {% endfor %}
+    </div>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+      function handleForm(event) { 
+        var formData = new FormData();
+        // var text = document.getElementById("url-box").value
+        var file = document.getElementById("file").files[0]
+        // formData.append("url", text);
+        formData.append("file",file)
+        var request = new XMLHttpRequest();
+        request.open("POST", "/upload-image");
+        request.send(formData);
+        event.preventDefault(); 
+      } 
+      var form = document.getElementById("myForm");
+      form.addEventListener('submit', handleForm);
+    </script>
+  </body>
+</html>
